@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            var x = prompt ('type a number');
+            var y = prompt ('type another number');
+            let equation = prompt ('What equation do you want?');
+            let mult = equation === 'mult';
+            let div = equation === 'div';
+            let mod = equation === 'mod';
+            let multAns = Number(x) * Number(y);
+            let divAns = Number(x) / Number(y);
+            let modAns = Number(x) % Number (y);
+
+            if (mult){
+                alert(multAns); 
+            }
+            else if (div) {
+                alert(divAns);
+            }
+            else if (mod) {
+                alert(modAns);
+            }
+            else alert('invalid operation');
+        </script>
+    </body>
+</html>
